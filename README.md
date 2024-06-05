@@ -1,6 +1,6 @@
 W 
 =
-Chinese localization
+Chinese localization.
 汉化
 
 wcap
