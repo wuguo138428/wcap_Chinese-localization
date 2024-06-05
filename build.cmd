@@ -1,6 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
+taskkill /F /IM wcap.exe
+
 where /Q cl.exe || (
   set __VSCMD_ARG_NO_LOGO=1
   for /f "tokens=*" %%i in ('"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.VisualStudio.Workload.NativeDesktop -property installationPath') do set VS=%%i
@@ -30,3 +32,5 @@ fxc.exe /nologo /T cs_5_0 /E Convert /O3 /WX /Fh wcap_convert_shader.h /Vn Conve
 rc.exe /nologo wcap.rc
 cl.exe /nologo /W3 /WX /MP *.c /Fewcap.exe wcap.res /link /INCREMENTAL:NO /MANIFEST:EMBED /MANIFESTINPUT:wcap.manifest /SUBSYSTEM:WINDOWS /FIXED /merge:_RDATA=.rdata
 del *.obj *.res >nul
+pause>nul
+start "" "%~dp0wcap.exe"

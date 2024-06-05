@@ -957,8 +957,8 @@ static LRESULT CALLBACK WindowProc(HWND Window, UINT Message, WPARAM WParam, LPA
 
 			AppendMenuW(Menu, MF_STRING, CMD_WCAP, WCAP_TITLE);
 			AppendMenuW(Menu, MF_SEPARATOR, 0, NULL);
-			AppendMenuW(Menu, MF_STRING | (gRecording ? MF_DISABLED : 0), CMD_SETTINGS, L"Settings");
-			AppendMenuW(Menu, MF_STRING, CMD_QUIT, L"Exit");
+			AppendMenuW(Menu, MF_STRING | (gRecording ? MF_DISABLED : 0), CMD_SETTINGS, L"设置");
+			AppendMenuW(Menu, MF_STRING, CMD_QUIT, L"关闭程序");
 
 			POINT Mouse;
 			GetCursorPos(&Mouse);
@@ -1073,7 +1073,7 @@ static LRESULT CALLBACK WindowProc(HWND Window, UINT Message, WPARAM WParam, LPA
 	}
 	else if (Message == WM_WCAP_ALREADY_RUNNING)
 	{
-		ShowNotification(L"wcap is already running!", NULL, NIIF_INFO);
+		ShowNotification(L"wcap 已经在运行!", NULL, NIIF_INFO);
 		return 0;
 	}
 	else if (Message == WM_TASKBARCREATED)
