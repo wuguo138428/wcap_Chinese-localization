@@ -1,4 +1,5 @@
 W 
+=
 Chinese localization
 汉化
 
