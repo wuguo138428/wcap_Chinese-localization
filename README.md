@@ -2,7 +2,7 @@ Chinese localization.
 =====================
  [下载汉化软件][] 
  
- [原项目地址][]:[https://github.com/mmozeiko/wcap][]
+ [原项目地址][]: [https://github.com/mmozeiko/wcap][]
 
 wcap
 ====
