@@ -1,6 +1,6 @@
 Chinese localization.
 =====================
- [汉化][] 
+ [下载汉化软件][] 
 
 wcap
 ====
@@ -145,7 +145,7 @@ This is free and unencumbered software released into the public domain.
 Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as
 a compiled binary, for any purpose, commercial or non-commercial, and by any means.
 
-[汉化]:https://github.com/wuguo138428/wcap_Chinese-localization/releases/tag/%E6%B1%89%E5%8C%96
+[下载汉化软件]:https://github.com/wuguo138428/wcap_Chinese-localization/releases/tag/%E6%B1%89%E5%8C%96
 [wcap.exe]: https://raw.githubusercontent.com/wiki/mmozeiko/wcap/wcap.exe
 [wgc]: https://blogs.windows.com/windowsdeveloper/2019/09/16/new-ways-to-do-screen-capture/
 [MSMFH264]: https://docs.microsoft.com/en-us/windows/win32/medfound/h-264-video-encoder
